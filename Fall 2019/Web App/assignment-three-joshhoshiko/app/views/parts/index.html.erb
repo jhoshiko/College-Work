@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<tr>
+  <th><%= link_to "Cars", cars_path %></th>
+  <th colspan="2"><%= link_to "Makes", makes_path %></th>
+  <th colspan="3"><%= link_to "Parts", parts_path %></th>
+  <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+</tr>
+
+<h1>Parts</h1>
+
+<%= form_tag(search_parts_url, method: "get") do %>
+  <%= label_tag(:query, "Search for:") %>
+  <%= text_field_tag(:query) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @parts.each do |part| %>
+      <tr>
+        <td><%= part.name %></td>
+        <td><%= link_to 'Show', part %></td>
+        <td><%= link_to 'Edit', edit_part_path(part) %></td>
+        <td><%= link_to 'Destroy', part, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New Part', new_part_path %>
+<br>
+

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Test
+comment0.text=\r\n\ This\ is\ a\ test\ class\r\n\r\n\ @author\ Joshua\ Hoshiko\r\n\ @version\ August_22_2018\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ This\ is\ the\ main\ method\ which\ will\ be\ executed\ when\r\n\ we\ run\ the\ Test\ program.\r\n
+numComments=2

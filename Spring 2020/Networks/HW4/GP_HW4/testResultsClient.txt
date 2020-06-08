@@ -1,0 +1,146 @@
+$ java SMTPClient
+Please enter the DNS or IP of the server: cs3700a.msudenver.edu
+
+220 cs3700a.msudenver.edu
+
+Your email address: jhoshiko@msudenver.edu
+Destination email address: josh.hoshiko@yahoo.com
+Subject: This is a test
+Enter your message. Please enter a single '.' when done:
+Hello,
+
+I am writing this email as a test for our SMTP client/server
+Hopefully this test will not prove that this code is broken.
+
+Best regards,
+Joshua Hoshiko
+.
+Initiating sending sequence...
+
+250 cs3700a.msudenver.edu Hello cs3700a/147.153.10.87
+RTT of Query: 25ms
+
+250 2.1.0 Sender OK
+RTT of Query: 3ms
+
+250 2.1.5 Recipient OK
+RTT of Query: 1ms
+
+354 Start mail input; end with <CRLF>.<CRLF>
+RTT of Query: 0ms
+
+
+The following email contents have been sent:
+DATA
+To: josh.hoshiko@yahoo.com
+From: jhoshiko@msudenver.edu
+Subject: This is a test
+
+
+Hello,
+
+I am writing this email as a test for our SMTP client/server
+Hopefully this test will not prove that this code is broken.
+
+Best regards,
+Joshua Hoshiko
+.
+
+250 Message received and to be delivered
+RTT of Query: 2ms
+
+
+Would you like to continue? Enter 'yes' or 'no': yes
+
+Your email address: newEmail@email.com
+Destination email address: newerEmail@email.com
+Subject: Testing a second email
+Enter your message. Please enter a single '.' when done:
+This is a test of
+the second email
+to make sure that it functions correctly a second time
+
+Thanks,
+Josh
+.
+Initiating sending sequence...
+
+250 cs3700a.msudenver.edu Hello cs3700a/147.153.10.87
+RTT of Query: 5ms
+
+250 2.1.0 Sender OK
+RTT of Query: 1ms
+
+250 2.1.5 Recipient OK
+RTT of Query: 1ms
+
+354 Start mail input; end with <CRLF>.<CRLF>
+RTT of Query: 0ms
+
+
+The following email contents have been sent:
+DATA
+To: newerEmail@email.com
+From: newEmail@email.com
+Subject: Testing a second email
+
+
+This is a test of
+the second email
+to make sure that it functions correctly a second time
+
+Thanks,
+Josh
+.
+
+250 Message received and to be delivered
+RTT of Query: 1ms
+
+
+Would you like to continue? Enter 'yes' or 'no': no
+
+Shutting down connection...
+
+221 cs3700a.msudenver.edu closing connection
+
+*****************************************************************
+***This is the server commands from the server's point of view***
+*****************************************************************
+
+$ java SMTPMultiServer
+HELO cs3700a.msudenver.edu
+MAIL FROM: jhoshiko@msudenver.edu
+RCPT TO: josh.hoshiko@yahoo.com
+DATA
+
+To: josh.hoshiko@yahoo.com
+From: jhoshiko@msudenver.edu
+Subject: This is a test
+
+Hello,
+
+I am writing this email as a test for our SMTP client/server
+Hopefully this test will not prove that this code is broken.
+
+Best regards,
+Joshua Hoshiko
+.
+HELO cs3700a.msudenver.edu
+MAIL FROM: newEmail@email.com
+RCPT TO: newerEmail@email.com
+DATA
+
+To: newerEmail@email.com
+From: newEmail@email.com
+Subject: Testing a second email
+
+This is a test of
+the second email
+to make sure that it functions correctly a second time
+
+Thanks,
+Josh
+.
+QUIT
+Closing all i/o streams
+

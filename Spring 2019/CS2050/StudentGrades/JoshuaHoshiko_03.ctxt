@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=JoshuaHoshiko_03
+comment0.text=\r\n\ This\ class\ is\ designed\ to\ test\ the\ List\ class\ and\ to\ process\ data\ about\ students\ and\ \r\n\ their\ grade\ items.\ This\ class\ reads\ form\ an\ input\ file\ and\ then\ generates\ an\ output\ file\ \r\n\ with\ a\ data\ report\r\n\r\n\ @author\ Joshua\ Hoshiko\r\n\ @version\ 20190304\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Main\ Method\ for\ initializing\ lists\ and\ facilitating\ data\ processing.\r\n
+comment2.params=
+comment2.target=void\ processInput()
+comment2.text=\r\n\ Process\ input\ opens\ the\ necessary\ files,\ reads\ a\ data\ file\ and\ calls\ \r\n\ the\ appropriate\ data\ processing\ methods\ for\ students\ and\ for\ grade\ items.\r\n
+comment3.params=info
+comment3.target=void\ processStudentData(java.lang.String[])
+comment3.text=\r\n\ Process\ student\ data\ handles\ all\ student\ data\ and\ can\ add\ \r\n\ or\ remove\ from\ the\ student\ list.\r\n
+comment4.params=info
+comment4.target=void\ processGradeItemData(java.lang.String[])
+comment4.text=\r\n\ Proces\ grade\ item\ data\ handles\ all\ grade\ item\ data\ and\ can\ add\ or\ remove\ from\ the\r\n\ grade\ item\ list.\r\n
+comment5.params=
+comment5.target=void\ generateReport()
+comment5.text=\r\n\ Generate\ report\ takes\ all\ the\ relevant\ data\ in\ the\ lists,\ sorts\ them,\ and\ then\ formats\r\n\ a\ report\ to\ be\ written\ to\ an\ output\ file.\r\n
+numComments=6

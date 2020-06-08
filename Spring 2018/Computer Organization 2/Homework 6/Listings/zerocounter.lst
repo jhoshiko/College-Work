@@ -1,0 +1,270 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;Joshua Hoshiko
+    2 00000000         ;CS2400
+    3 00000000         ;March 28, 2018
+    4 00000000         
+    5 00000000                 AREA             zeroCounter, CODE, READONLY
+    6 00000000         
+    7 00000000                 EXPORT           main
+    8 00000000                 IMPORT           randomnumber
+    9 00000000         
+   10 00000000         main
+   11 00000000 F04F 0000       MOV              R0, #0      ;Clear R0
+   12 00000004 F04F 0100       MOV              R1, #0      ;Clear R1
+   13 00000008 F04F 0200       MOV              R2, #0      ;Clear R2
+   14 0000000C F04F 0300       MOV              R3, #0      ;Clear R3
+   15 00000010 F04F 0400       MOV              R4, #0      ;Clear R4
+   16 00000014 F04F 0500       MOV              R5, #0      ;Clear R5
+   17 00000018 F04F 0600       MOV              R6, #0      ;Clear R6
+   18 0000001C F04F 0700       MOV              R7, #0      ;Clear R7
+   19 00000020 F04F 0800       MOV              R8, #0      ;Clear R8
+   20 00000024 F8DF 8080       LDR              R8, =array  ;Load array startin
+                                                            g address into R1
+   21 00000028 4E20            LDR              R6, =allOnes
+   22 0000002A         loadLoop
+   23 0000002A F7FF FFFE       BL               randomnumber ;randomnumber stor
+                                                            ed in R0
+   24 0000002E F848 0B04       STR              R0, [R8], #4 ;Store random numb
+                                                            er into the array, 
+                                                            spot by spot
+   25 00000032 F107 0701       ADD              R7, R7, #1  ;Increment word cou
+                                                            nter
+   26 00000036 F097 0F0B       TEQ              R7, #11     ;Check if 11 words 
+                                                            have been loaded
+   27 0000003A D1F6            BNE              loadLoop    ;Repeat loads till 
+                                                            we reach 11
+   28 0000003C F8DF 8068       LDR              R8, =array  ;reset address poin
+                                                            ter
+   29 00000040         
+   30 00000040 F04F 0200       MOV              R2, #0      ;Clear the bubble s
+                                                            ort counter
+   31 00000044         bubbleSort
+   32 00000044 F000 F810       BL               swap        ;branch to bubbleSo
+                                                            rt subroutine
+   33 00000048 F102 0201       ADD              R2,R2, #1   ;Increment bubble s
+                                                            ort counter
+   34 0000004C F092 0F0B       TEQ              R2, #11     ;Test if we've loop
+                                                            ed enough
+   35 00000050         
+   36 00000050 D1F8            BNE              bubbleSort  ;If we haven't lopp
+                                                            ed enough go and lo
+                                                            op again
+   37 00000052 F8DF 8054       LDR              R8, =array  ;Reset address poin
+                                                            ter
+   38 00000056 F04F 0200       MOV              R2, #0      ;Clear the bubble s
+                                                            ort counter
+   39 0000005A F097 0F00       TEQ              R7, #0      ;Test if we swapped
+                                                             at all
+   40 0000005E F04F 0700       MOV              R7, #0      ;Clear the swap cou
+                                                            nter
+   41 00000062 D1EF            BNE              bubbleSort  ;Branch back to bub
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+                                                            ble sort if the pre
+                                                            ivious sort had a s
+                                                            wap
+   42 00000064         
+   43 00000064 F000 F80E       BL               countZero
+   44 00000068         
+   45 00000068         swap
+   46 00000068 F8D8 0000       LDR              R0, [R8]    ;load first word in
+                                                            to R0
+   47 0000006C F8D8 1004       LDR              R1, [R8, #4] ;load second word 
+                                                            into R1
+   48 00000070 F108 0804       ADD              R8, R8, #4  ;Increment address
+   49 00000074 4288            CMP              R0, R1      ;Compare the two va
+                                                            lues
+   50 00000076 BFC2 F8C8 
+              0000             STRGT            R0, [R8]    ;Swap if R0 to R1's
+                                                             position if R0 is 
+                                                            greater than 
+   51 0000007C F848 1C04       STRGT            R1, [R8, #-4] ;Swap if R1 to R0
+                                                            's position 
+   52 00000080 2701            MOVGT            R7, #1
+   53 00000082 4770            BX               LR
+   54 00000084         
+   55 00000084         countZero
+   56 00000084 F094 0F0B       TEQ              R4, #11     ;(cleared outside s
+                                                            ubroutine), counter
+                                                             for number of word
+                                                            s checked
+   57 00000088 BF08 4770       BXEQ             LR          ;exit to main if do
+                                                            ne with all words
+   58 0000008C F104 0401       ADD              R4, R4, #1  ;increment word cou
+                                                            nter
+   59 00000090 F858 5B04       LDR              R5, [R8], #4 ;load number from 
+                                                            address, shift to n
+                                                            ext word after 
+   60 00000094         countLoop
+   61 00000094 EA95 0F06       TEQ              R5, R6      ;does this have any
+                                                             0's left?
+   62 00000098 D0F4            BEQ              countZero   ;end the count for 
+                                                            this word
+   63 0000009A F105 0201       ADD              R2, R5, #1  ;remove a zero by a
+                                                            dding and performin
+                                                            g ORR
+   64 0000009E EA45 0502       ORR              R5, R5, R2
+   65 000000A2 F103 0301       ADD              R3, R3, #1  ;increment counter 
+                                                            of number of 0's
+   66 000000A6 E7F5            B                countLoop   ;Go through loop ag
+                                                            ain to check for 0'
+                                                            s again
+   67 000000A8         
+   68 000000A8 00000000 
+              00000000 
+              00000000 
+              00000000         AREA             arrayArea, DATA, READWRITE
+   69 00000000 00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+
+
+
+ARM Macro Assembler    Page 3 
+
+
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00    array   %                11*4
+   70 0000002C FFFFFFFF 
+                       allOnes DCD              0xFFFFFFFF
+   71 00000030                 ALIGN
+   72 00000030                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\zerocounter.d -o.\objects\zerocounter.o -I.\RTE\_Target_
+1 -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include -IC:\Keil_v5\ARM\PACK\ARM
+\CMSIS\5.3.0\Device\ARM\ARMCM3\Include --predefine="__EVAL SETA 1" --predefine=
+"__UVISION_VERSION SETA 525" --predefine="_RTE_ SETA 1" --predefine="ARMCM3 SET
+A 1" --list=.\listings\zerocounter.lst ZeroCounter.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+bubbleSort 00000044
+
+Symbol: bubbleSort
+   Definitions
+      At line 31 in file ZeroCounter.s
+   Uses
+      At line 36 in file ZeroCounter.s
+      At line 41 in file ZeroCounter.s
+
+countLoop 00000094
+
+Symbol: countLoop
+   Definitions
+      At line 60 in file ZeroCounter.s
+   Uses
+      At line 66 in file ZeroCounter.s
+Comment: countLoop used once
+countZero 00000084
+
+Symbol: countZero
+   Definitions
+      At line 55 in file ZeroCounter.s
+   Uses
+      At line 43 in file ZeroCounter.s
+      At line 62 in file ZeroCounter.s
+
+loadLoop 0000002A
+
+Symbol: loadLoop
+   Definitions
+      At line 22 in file ZeroCounter.s
+   Uses
+      At line 27 in file ZeroCounter.s
+Comment: loadLoop used once
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 10 in file ZeroCounter.s
+   Uses
+      At line 7 in file ZeroCounter.s
+Comment: main used once
+swap 00000068
+
+Symbol: swap
+   Definitions
+      At line 45 in file ZeroCounter.s
+   Uses
+      At line 32 in file ZeroCounter.s
+Comment: swap used once
+zeroCounter 00000000
+
+Symbol: zeroCounter
+   Definitions
+      At line 5 in file ZeroCounter.s
+   Uses
+      None
+Comment: zeroCounter unused
+7 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+allOnes 0000002C
+
+Symbol: allOnes
+   Definitions
+      At line 70 in file ZeroCounter.s
+   Uses
+      At line 21 in file ZeroCounter.s
+Comment: allOnes used once
+array 00000000
+
+Symbol: array
+   Definitions
+      At line 69 in file ZeroCounter.s
+   Uses
+      At line 20 in file ZeroCounter.s
+      At line 28 in file ZeroCounter.s
+      At line 37 in file ZeroCounter.s
+
+arrayArea 00000000
+
+Symbol: arrayArea
+   Definitions
+      At line 68 in file ZeroCounter.s
+   Uses
+      None
+Comment: arrayArea unused
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+randomnumber 00000000
+
+Symbol: randomnumber
+   Definitions
+      At line 8 in file ZeroCounter.s
+   Uses
+      At line 23 in file ZeroCounter.s
+Comment: randomnumber used once
+1 symbol
+347 symbols in table

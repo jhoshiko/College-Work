@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.coverage
+htmlcov/
+*.DS_Store
+.idea/
+jvm/
+pyjvm/.DS_Store
+/.idea
+/jvm/.idea
+/pyjvm/.idea

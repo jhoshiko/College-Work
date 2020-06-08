@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1559799726 source:c:\users\josh\desktop\os\jhoshiko_hw1\main.c
+	<sys/types.h>
+	<unistd.h>
+	<stdio.h>
+	<stdlib.h>
+
+1559799755 source:c:\users\josh\desktop\os\jhoshiko_hw1\counter.c
+	<sys/types.h>
+	<unistd.h>
+	<stdio.h>
+	<stdlib.h>
+

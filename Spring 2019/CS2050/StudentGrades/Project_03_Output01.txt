@@ -1,0 +1,24 @@
+900123457 Jane Doe janedoe@msudenver.edu
+    Grade-Items:
+    1  23456  HW  20190113  100  75
+    2  23456  Test  20190113  100  78
+=====================================================
+    Total:              Max: 200  Actual: 153  Percentage: 76.5%
+
+
+900123458 Mary Smith marysmith@msudenver.edu
+    Grade-Items:
+    1  23456  Quiz  20190114  100  80
+    2  23456  Quiz  20190114  100  83
+=====================================================
+    Total:              Max: 200  Actual: 163  Percentage: 81.5%
+
+
+900123459 David Smith davidsmith@msudenver.edu
+    Grade-Items:
+    1  23456  Test  20190114  100  95
+    2  23456  HW  20190114  100  99
+=====================================================
+    Total:              Max: 200  Actual: 194  Percentage: 97.0%
+
+

@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Hvac
+comment0.text=\n\ Hvac\ class\ simulate\ a\ HVAC\ system.\ It\ has\ four\ fields\:\ temperature,\ min,\n\ max,\ and\ delta.\ Temperature\ of\ the\ heater\ goes\ up\ and\ down\ by\ delta.\ It\n\ can\ never\ go\ below\ min\ and\ above\ max\n\n\ @author\ Salim\ Lakhani\n\ @version\ 20171008\n
+comment1.params=inTemperature\ inDelta
+comment1.target=Hvac(int,\ int)
+comment1.text=\n\ Initializes\ a\ newly\ created\ Heater\ object\ using\ the\ arguments\ value\ for\n\ temperature\ and\ delta.\ min\ is\ set\ to\ the\ default\ value\ of\ 0\ and\ max\ is\ set\n\ to\ default\ value\ of\ 100.\n\ @param\ inTemperatur\ Initial\ value\ for\ temperature\n\ @param\ delta\ Initial\ value\ for\ delta\n
+comment2.params=
+comment2.target=int\ getTemperature()
+comment2.text=\n\ Return\ current\ value\ of\ temperature\n\ @return\ current\ value\ of\ temperature\n
+comment3.params=newDelta
+comment3.target=void\ setDelta(int)
+comment3.text=\n\ Set\ the\ new\ value\ for\ delta.\ If\ the\ new\ value\ is\ negative\ or\ 0\n\ then\ delta\ will\ be\ set\ to\ default\ value\ of\ 5\n\ @param\ newDelta\ new\ value\ for\ delta\n
+comment4.params=
+comment4.target=void\ cooler()
+comment4.text=\n\ Mutator\ method\ that\ will\ cool\ down\ the\ heater\ by\ reducing\ the\ temperatur\n\ by\ delta.\ If\ temperature\ falls\ below\ min\ then\ it\ will\ set\ it\ to\ min.\n
+comment5.params=
+comment5.target=void\ warmer()
+comment5.text=\n\ Mutator\ method\ that\ will\ warm\ up\ the\ heater\ by\ increasing\ the\ temperatur\n\ by\ delta.\ If\ temperature\ falls\ above\ max\ then\ it\ will\ set\ it\ to\ max.\n
+numComments=6

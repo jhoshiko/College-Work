@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=JoshuaHoshiko_02
+comment0.text=\r\n\ Purpose\:\r\n\ This\ program\ will\ test\ the\ functionality\ of\ both\ the\ Student\ annd\ GradeItem\ classes\r\n\ \r\n\ Assumptions\:\r\n\ None.\r\n\r\n\ CS2050\r\n\ @author\ Joshua\ Hoshiko\r\n\ @version\ February_5_2019\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=studentData
+comment2.target=void\ processStudentData(java.lang.String[])
+comment2.text=\r\n\ The\ processStudentData\ method\ accepts\ a\ string\ array\ and\ attempts\ to\ instantiate\ a\r\n\ student\ object\ with\ the\ data.\ The\ methods\ checks\ for\ the\ "ADD"\ keyword\ and\ assigns\ \r\n\ the\ rest\ of\ the\ data\ accordingly.\ If\ an\ invalid\ parameter\ is\ passed,\ it\ will\ catch\ \r\n\ the\ IllegalArgumentEception\ and\ display\ the\ error\ message\ from\ the\ student\ class.\r\n\ @param\ studentData\ A\ String\ array\ holding\ data\ for\ a\ student\ object\ that\ requires\ processing.\r\n
+comment3.params=gradeItemData
+comment3.target=void\ processGradeItemData(java.lang.String[])
+comment3.text=\r\n\ The\ processGradeItemData\ method\ accepts\ a\ string\ array\ and\ attempts\ to\ instantiate\ a\r\n\ gradeitem\ object\ with\ the\ data.\ The\ methods\ checks\ for\ the\ "ADD"\ keyword\ and\ assigns\ \r\n\ the\ rest\ of\ the\ data\ accordingly.\ If\ an\ invalid\ parameter\ is\ passed,\ it\ will\ catch\ \r\n\ the\ IllegalArgumentEception\ and\ display\ the\ error\ message\ from\ the\ gradeitem\ class.\r\n\ @param\ gradeItemData\ A\ String\ array\ holding\ data\ for\ a\ gradeitem\ object\ that\ requires\ processing.\r\n
+numComments=4

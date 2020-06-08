@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=PersonalInformation
+comment0.text=\r\n\ Declare\ and\ prints\ personal\ information\ on\ seperate\ lines\r\n\r\n\ Joshua\ Hoshiko\r\n\ September\ 11,\ 2018\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

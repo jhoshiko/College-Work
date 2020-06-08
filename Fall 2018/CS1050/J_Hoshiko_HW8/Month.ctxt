@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Month
+comment0.text=\r\n\ Creates\ a\ Month\ object\ which\ contains\ a\ month\ number.\r\n\r\n\ @author\ Joshua\ Hoshiko\r\n\ @version\ November,\ 13,\ 2018\r\n
+comment1.params=
+comment1.target=Month()
+comment10.params=other
+comment10.target=boolean\ lessThan(Month)
+comment2.params=newMonth
+comment2.target=Month(int)
+comment3.params=monthName
+comment3.target=Month(java.lang.String)
+comment4.params=other
+comment4.target=Month(Month)
+comment5.params=newMonth
+comment5.target=void\ setMonthNumber(int)
+comment6.params=
+comment6.target=int\ getMonthNumber()
+comment7.params=
+comment7.target=java.lang.String\ getMonthName()
+comment8.params=other
+comment8.target=boolean\ equals(Month)
+comment9.params=other
+comment9.target=boolean\ greaterThan(Month)
+numComments=11

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Cookies
+comment0.text=\r\n\ This\ program\ lets\ users\ input\ the\ amount\ of\ cookies\ they\ want\ to\ eat.\ \r\n\ The\ program\ will\ then\ report\ the\ amount\ of\ calories\ the\ user\ ate.\r\n\r\n\ @author\ Joshua\ Hoshiko\r\n\ @version\ 09202018\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=cookiesEaten
+comment2.target=double\ Servings(double)
+comment2.text=\r\n\ The\ Servings\ method\ accepts\ a\ number\ of\ cookies\ eaten\ and\ then\ calculates\ the\ amount\ of\ \r\n\ serving\ for\ that\ amount\ of\ cookies.\r\n
+comment3.params=numberServings
+comment3.target=double\ Calories(double)
+comment3.text=\r\nThe\ Calories\ method\ accepts\ a\ number\ of\ servings\ of\ cookies\ and\ then\ calculates\ the\ amount\r\nof\ calories\ consumed.\r\n
+numComments=4

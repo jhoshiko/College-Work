@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="jhoshiko_hw1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/jhoshiko_hw1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/jhoshiko_hw1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libaclui.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libadvapi32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libapcups.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libavicap32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libavifil32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libbthprops.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libcap.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libcfgmgr32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libcoldname.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libcomctl32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libcomdlg32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libcrtdll.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libcrypt32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libctl3d32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libd3d8.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libd3d9.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libd3dim.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libd3drm.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libd3dx8d.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libd3dx9d.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libd3dxof.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libddraw.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdhcpcsvc.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdinput.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdinput8.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdlcapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdmoguids.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdnsapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdplayx.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdpnaddr.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdpnet.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdpnlobby.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdpvoice.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdsetup.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdsound.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdxapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdxerr8.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdxerr9.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libdxguid.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libfaultrep.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libgdi32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libgdiplus.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglaux.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libglu32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libgmon.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libhal.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libhid.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libhidparse.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libicmui.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libigmpagnt.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libimagehlp.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libimm32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libiphlpapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libkernel32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libksproxy.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libksuser.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/liblargeint.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/liblz32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libm.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmapi32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmcd.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmfcuia32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmgmtapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmingw32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmingwex.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmingwthrd.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmingwthrd_old.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmoldname.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmoldname70.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmoldname70d.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmoldname71.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmoldname71d.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmoldname80.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmoldname80d.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmoldname90.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmoldname90d.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmoldname100.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmoldname100d.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmoldnamed.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmpr.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmprapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmqrt.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsacm32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmscms.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsdmo.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsimg32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcp60.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcr70.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcr70d.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcr71.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcr71d.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcr80.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcr80d.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcr90.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcr90d.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcr100.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcr100d.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcrt.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvcrtd.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmsvfw32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libmswsock.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libnddeapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libndis.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libnetapi32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libnewdev.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libntdll.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libntoskrnl.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libodbc32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libodbccp32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libole32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/liboleacc.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/liboleaut32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libolecli32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/liboledlg.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libolepro32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libolesvr32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libopengl32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libpenwin32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libpkpd32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libpowrprof.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libpsapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libpthread.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libpthread_s.dll.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libquartz.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/librapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/librasapi32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/librasdlg.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/librpcdce4.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/librpcns4.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/librpcrt4.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/librtm.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/librtutils.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libscrnsave.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libscrnsavw.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libscsiport.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libsecur32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libsetupapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libshell32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libshfolder.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libshlwapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libsnmpapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libstrmiids.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libsvrapi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libtapi32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libtdi.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libthunk32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/liburl.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libusbcamd.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libusbcamd2.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libuser32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libuserenv.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libusp10.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libuuid.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libuxtheme.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libvdmdbg.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libversion.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libvfw32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libvideoprt.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwin32k.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwin32spl.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwininet.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwinmm.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwinpthread.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwinpthread.dll.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwinspool.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwinstrm.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwldap32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwow32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libws2_32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwsnmp32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwsock32.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwst.a" />
+			<Add library="C:/Program Files (x86)/CodeBlocks/MinGW/lib/libwtsapi32.a" />
+		</Linker>
+		<Unit filename="counter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

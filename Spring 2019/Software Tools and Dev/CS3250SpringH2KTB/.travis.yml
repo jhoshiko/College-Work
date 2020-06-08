@@ -1,0 +1,18 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install codecov
+addons:
+  sonarcloud:
+    organization: "rhill53-github" # the key of the org you chose at step #3
+    token:
+      secure: SONAR_TOKEN # encrypted value of your token
+script:
+  # other script steps might be done before running the actual analysis
+  - pytest run_unittest.py
+  - coverage run --omit=*test* -m run_unittest
+  - coverage xml -i
+after_success:
+  - codecov
+  - sonar-scanner

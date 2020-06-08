@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=House
+comment0.text=\r\n\ This\ class\ will\ draw\ a\ picture\ of\ a\ house,\ a\ sun\ and\ a\ person\ using\ various\ shapes.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ main\ method\ will\ create\ objects\ of\ various\ shapes,\ set\ their\ color,\ move\r\n\ them\ to\ appropriate\ position,\ and\ make\ them\ visible.\r\n\ \r\n\ @param\ args\ command\ line\ arguments\r\n
+numComments=2

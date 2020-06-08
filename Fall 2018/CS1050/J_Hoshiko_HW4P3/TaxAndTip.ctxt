@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=TaxAndTip
+comment0.text=\r\n\ This\ program\ accepts\ a\ meals\ subtotal\ and\ calculates\ tip\ and\ sales\ tax.\ \r\n\ The\ program\ then\ calculates\ a\ final\ cost.\r\n\r\n\ @author\ Joshua\ Hoshiko\r\n\ @version\ 09202018\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=subTotal
+comment2.target=double\ Tax(double)
+comment2.text=\r\n\ The\ Tax\ method\ accepts\ a\ sub-total\ and\ calculates\ the\ tax\ total\ for\ the\ meal.\r\n
+comment3.params=subTotal
+comment3.target=double\ Tip(double)
+comment3.text=\r\n\ The\ Tip\ method\ accepts\ a\ sub-total\ and\ calculates\ the\ tip\ total\ for\ the\ meal.\r\n
+numComments=4

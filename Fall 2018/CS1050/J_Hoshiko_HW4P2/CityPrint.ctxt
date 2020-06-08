@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=CityPrint
+comment0.text=\r\n\ This\ Program\ will\ accept\ a\ city\ name\ and\ then\ print\ variations\ of\ the\ city\ name\r\n\r\n\ @author\ Joshua\ Hoshiko\r\n\ @version\ 09202018\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

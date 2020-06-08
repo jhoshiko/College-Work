@@ -1,0 +1,71 @@
+$ java RouterSimulator
+Please enter the number of routers, 'n', in the network.
+'n' must be greater than or equal to 2 amd non-negative.
+Please enter a value for n: 6
+
+Cost matrix:
+0 2 5 1 -1 -1
+2 0 3 2 -1 -1
+5 3 0 3 1 5
+1 2 3 0 1 -1
+-1 -1 1 1 0 2
+-1 -1 5 -1 2 0
+
+This is iteration: 0
+Distance Vector:[0, 2, 5, 1, -1, -1]
+Predecessor Vector: [0, 0, 0, 0, -1, -1]
+N' : [0]
+Y' :
+
+This is iteration: 1
+Distance Vector:[0, 2, 4, 1, 2, -1]
+Predecessor Vector: [0, 0, 3, 0, 3, -1]
+N' : [0, 3]
+Y' :
+{V0, V3}
+
+This is iteration: 2
+Distance Vector:[0, 2, 3, 1, 2, 4]
+Predecessor Vector: [0, 0, 4, 0, 3, 4]
+N' : [0, 3, 4]
+Y' :
+{V3, V4}
+{V0, V3}
+
+This is iteration: 3
+Distance Vector:[0, 2, 3, 1, 2, 4]
+Predecessor Vector: [0, 0, 4, 0, 3, 4]
+N' : [0, 3, 4, 1]
+Y' :
+{V3, V4}
+{V0, V3}
+{V0, V1}
+
+This is iteration: 4
+Distance Vector:[0, 2, 3, 1, 2, 4]
+Predecessor Vector: [0, 0, 4, 0, 3, 4]
+N' : [0, 3, 4, 1, 2]
+Y' :
+{V3, V4}
+{V0, V3}
+{V4, V2}
+{V0, V1}
+
+This is iteration: 5
+Distance Vector:[0, 2, 3, 1, 2, 4]
+Predecessor Vector: [0, 0, 4, 0, 3, 4]
+N' : [0, 3, 4, 1, 2, 5]
+Y' :
+{V4, V5}
+{V3, V4}
+{V0, V3}
+{V4, V2}
+{V0, V1}
+
+             Forwarding Table
+Destination                     Link
+V1                              (V0, V1)
+V2                              (V0, V3, V4, V2)
+V3                              (V0, V3)
+V4                              (V0, V3, V4)
+V5                              (V0, V3, V4, V5)

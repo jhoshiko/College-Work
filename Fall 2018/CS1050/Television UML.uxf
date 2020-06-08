@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>110</x>
+      <y>140</y>
+      <w>370</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>Television
+--
+manufacturer:String
+screenSize:int
+powerOn:boolean
+channel:int
+volume:int
+--
+Television(manufacturer:String, screenSize:int)
+setChannel(newChannel:int)
+power()
+increaseVolume()
+decreaseVolume()
+getChannel() channel:int
+getVolume() volume:int
+getManufacturer() manufacturer:String
+getScreenSize() screenSize:int</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

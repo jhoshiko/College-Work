@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  model: Cross Runner
+  vin: 1234
+  make: Toyota
+
+two:
+  model: Skipper
+  vin: 4321
+  make: Mazda
